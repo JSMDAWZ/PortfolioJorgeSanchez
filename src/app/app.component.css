@@ -1,0 +1,385 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url(https://db.onlinewebfonts.com/c/f6b8430020afaa6c51c1b6a74d90de48?family=Movatif+W00+Bold);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+
+* {
+    
+    margin: 0;
+    padding: 0; 
+    overflow:auto; 
+    display: flex;  
+    
+}
+body {
+    margin: 0; /* Elimina el margen por defecto del body */
+    overflow:hidden; /* Evita barras de desplazamiento globales */
+    background-color:#333;
+}
+
+.sidebar {
+    position: fixed;        /* Fija la posición del sidebar */
+    left: 0;                /* Lo coloca en la parte izquierda */
+    top: 0;                 /* Lo alinea con la parte superior de la página */
+    width: 150px;           /* Define el ancho del sidebar (puedes ajustarlo) */
+    height: 100%; 
+    padding: 2%;         /* Ocupa toda la altura de la ventana (viewport) */
+    background-color: #292929; /* Color de fondo (puedes cambiarlo) */
+    color: white;           /* Color de texto (ajustable) */          
+    flex-direction: column; /* Alinea el contenido verticalmente */
+    font-family: "Nerko One", cursive;
+    font-weight: 100%;
+    font-style: normal;
+    z-index: 5
+    
+  }
+
+.content {
+    left: 0;                /* Lo coloca en la parte izquierda */
+    top: 0;
+    right: 0;
+    bottom: 0;
+    height: 100%;       /* Ocupa toda la altura del viewport */ /* Ocupa el ancho total menos el espacio del sidebar */
+    display: flex;        /* Usamos Flexbox para centrar el contenido */
+    justify-content: left;
+    background-color: #333;
+    position: absolute;
+    
+
+    
+}
+.sidebar-content {                /* Permite que este contenedor ocupe el espacio restante */
+    display: flex;
+    flex-direction: column;
+    margin-top: 250px;
+    margin-bottom: 50px; /* Alinea los elementos dentro del contenedor */
+    z-index: 2;
+}
+.sidebar-content button {                /* Permite que este contenedor ocupe el espacio restante */
+
+    margin-bottom: 30px; /* Alinea los elementos dentro del contenedor */
+
+}
+h1{    
+    margin-left: 300px;
+    margin-top: 110px;
+}
+
+.welcome {
+    width: 1085px;
+    font-size: 100px;
+    color: rgb(228, 228, 228);
+    font-family: "Movatif W00 Bold", sans-serif;
+    font-weight: 600;
+    font-style: normal;
+    flex-direction: column;                
+}
+.welcome p {
+    color: rgb(228, 228, 228);
+    margin: 0;                 /* Elimina márgenes para evitar espacio extra */
+    line-height: 1.2;
+}
+.code-head {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-top: 10px;
+    margin-left: 200px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #838383  ; 
+    opacity: 80%;             /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+.code-body {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-top: 45px;
+    margin-left: 230px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #838383  ;
+    opacity: 80%;              /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+.code-h1 {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-top: 80px;
+    margin-left: 260px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #838383  ;
+    opacity: 80%;              /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+.code-h1end {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-top: 406px;
+    margin-left: 1100px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #838383  ;  
+    opacity: 80%;          /* Color del texto del botón */
+    transition: background-color 0.3s ease;  /* Transición para el color de fondo */
+}
+.code-button {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-top: 450px;
+    margin-left: 250px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #838383  ;  
+    opacity: 80%;          /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+.code-button-end {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position: absolute;
+    margin-top: 580px;
+    margin-left: 250px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #838383  ;  
+    opacity: 80%;          /* Color del texto del botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+.image-container {
+    display: flex;
+    max-width: 80%;
+    margin: 15% auto;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    display: flex;
+    justify-content: center;  /* Centra horizontalmente */
+    align-items: center;
+    background-color: #333;
+    
+}
+
+.logo {
+    position: absolute;     /* Posiciona la imagen absolutamente dentro del sidebar */
+    top: 0;                /* Ajusta el espacio superior */
+    left: 0;                /* Alinea la imagen al borde izquierdo del sidebar */
+    width: 100%;            /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+}
+.sidebar button {
+    font-size: 25px;
+    background: none;        /* Sin fondo */
+    border: none;            /* Sin borde */
+    color: white;            /* Color de texto */        /* Tamaño de fuente */
+    font-family: "Nerko One", cursive; /* Fuente */
+              /* Espacio entre botones */
+    padding: 10px;           /* Espacio interno del botón */
+    text-align: left;        /* Alineación del texto */
+    cursor: pointer;         /* Cursor de mano */
+    width: 100%;             /* Ancho completo del contenedor */
+    text-transform: uppercase; /* Texto en mayúsculas */
+}
+.contactme {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 316px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #14dac3  ;            /* Color del texto del botón */
+    background-color: #333; /* Color de fondo del botón */
+    border: 2px solid #14dac3  ;           /* Elimina el borde del botón */
+    border-radius: 2px;     /* Bordes redondeados del botón */
+    cursor: pointer;        /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+}
+
+.contactme:hover {
+    background-color: #292929; /* Cambia el color de fondo al pasar el mouse */
+}
+
+.scroll {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    position:absolute;
+    margin-top: 740px;
+    margin-left: 1900px;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: #14dac3  ;  
+    opacity: 80%;          /* Color del texto del botón */
+    transition: background-color 0.3s ease;
+    align-content: right;
+    transform: rotate(90deg); /* Rota el texto 90 grados */
+    transform-origin: left top; /* Establece el origen de la rotación */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    
+}
+
+.texto {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "Caveat", cursive;
+    font-optical-sizing: auto;
+    font-style: normal;
+    margin-top: 610px;
+    right: 200px;
+    left: 700px;
+    position: absolute;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: rgb(228, 228, 228)  ;          
+    opacity: 100%;          /* Color del texto del botón */
+    transition: background-color 0.3s ease;
+    visibility: hidden;
+}
+.transicion {
+    height: 80px;
+    width: auto;
+    position:absolute;
+    margin-top: 100vh;
+    margin-left: 1000px;   
+    color: #14dac3  ;         /* Color del texto del botón */
+    transition: background-color 0.3s ease;
+    transform: rotate(270deg); /* Rota el texto 90 grados */
+    transform-origin: left top; /* Establece el origen de la rotación */
+    white-space: nowrap; /* Evita que el texto se divida en varias líneas */
+    
+}
+.audio-player {
+    overflow: hidden;
+    display: flex;
+    position: relative;
+    border-radius: 5px;
+    margin-top: 10px;
+    margin-left: 200px;
+    width: 300px; /* Ajusta el ancho del reproductor */
+    height: 60px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra opcional para un efecto más pulido */
+}
+.audio-player button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    margin: 0 5px;
+    padding: 0;
+    font-size: 18px;
+    color: #333;
+}
+.audio-player button:hover {
+    color: #000;
+}
+.audio-player .progress-bar {
+    flex: 1;
+    height: 5px;
+    background: #ccc;
+    border-radius: 5px;
+    margin: 0 10px;
+    position: relative;
+    margin-top: 14px;
+    margin-left: 50px;
+    margin-right: 43px;
+}
+.audio-player .progress-bar .progress {
+    height: 100%;
+    background: #3498db;
+    border-radius: 5px;
+    position: absolute;
+    width: 0%; /* Inicialmente vacío */
+}
+.volume-slider {
+    position: absolute;
+    flex-direction: column;
+    margin-top: 35px;
+    margin-left: 10px;
+    width: 70px; /* Ajusta el ancho del control deslizante según el diseño */
+    border-radius: 5px;
+
+}
+.song-name {
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    color: #ffffff; /* Color del texto */
+    position: absolute;
+    white-space: nowrap;
+    overflow: hidden; /* Oculta el texto que se desplaza fuera del contenedor */
+    width: 100%; /* Ocupará todo el ancho disponible del contenedor padre */
+    height: 30px;/* Ajusta la altura según sea necesario */
+    margin-left: 30%;
+    margin-top: 10%;
+    box-sizing: border-box;
+  }
+  
+  .song-name span {
+    display: inline-block;
+    animation: marquee 10s linear infinite; /* Ajusta la duración para controlar la velocidad */
+  }
+  .pause {
+    position: absolute;     /* Posiciona la imagen absolutamente dentro del sidebar */
+    top: 0;                /* Ajusta el espacio superior */
+    margin-left: 7%;                /* Alinea la imagen al borde izquierdo del sidebar */
+    width: 10%;            /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+  }
+  .play {
+    position: absolute;     /* Posiciona la imagen absolutamente dentro del sidebar */               /* Ajusta el espacio superior */
+    margin-left: 0%;               /* Alinea la imagen al borde izquierdo del sidebar */
+    width: 10%;            /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+  }
+  .reset {
+    position: absolute;     /* Posiciona la imagen absolutamente dentro del sidebar */
+    margin-top: 2%;               /* Ajusta el espacio superior */
+    margin-left: 82%;                /* Alinea la imagen al borde izquierdo del sidebar */
+    width: 7%;            /* Hace que la imagen ocupe todo el ancho del contenedor */
+    height: auto;
+  }
+  .sobremi {
+    position: absolute;
+    margin-top: 1000px;
+    font-size: 20px;
+  }
+  .cv {
+    font-size: 25px; /* Tamaño del texto del botón */
+    font-family: "IBM Plex Serif", serif;
+    font-weight: 500;
+    font-style: normal;
+    position: absolute;
+    margin-top: 510px;
+    margin-left: 560px;
+    background-color:#333;
+    border: #333 3px;     
+    cursor: pointer;        /* Cambia el cursor al pasar sobre el botón */
+    transition: background-color 0.3s ease; /* Transición para el color de fondo */
+  }
+  .cvimg {
+    height: 25px;
+    width: auto;
+  }
+
+  
+  @keyframes marquee {
+    0% {
+      transform: translateX(100%);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }

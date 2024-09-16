@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Nerko+One&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url(https://db.onlinewebfonts.com/c/f6b8430020afaa6c51c1b6a74d90de48?family=Movatif+W00+Bold);
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Serif:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400..700&family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Warang+Citi&display=swap');
+
+
+
+
+.contenido1 {
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1100px;
+    margin-bottom: 100px;
+    right: 20px;
+    left: 1100px;
+    position: absolute;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: rgb(228, 228, 228)  ;
+    background-color: #292929;          
+    opacity: 100%;  
+    border: 2px solid black;       /* Color del texto del botón */
+}
+.contenido2 {
+    font-family: "Noto Sans Warang Citi", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    margin-top: 1100px;
+    margin-bottom: 100px;
+    right: 940px;
+    left: 245px;
+    position: absolute;
+    padding: 10px 40px;     /* Espacio interno del botón */        
+    color: rgb(228, 228, 228)  ;  
+    background-color: #292929;        
+    opacity: 100%;  
+    border: 2px solid black;       /* Color del texto del botón */
+}
+p {
+    color: rgb(228, 228, 228);
+    margin: 0;                 /* Elimina márgenes para evitar espacio extra */
+    line-height: 1.9;
+}
+.linea-negra {
+    width: 2.4px;                /* Grosor de la línea */
+    height: 52px;             /* Atraviesa toda la altura de la pantalla */
+    background-color: black;  /* Color de la línea */
+    border: none;             /* Elimina cualquier borde predeterminado */
+    margin: 0;                /* Elimina márgenes adicionales si los hay */
+    padding: 0;               /* Elimina relleno adicional si lo hay */
+    position: absolute;       /* Permite posicionar la línea en cualquier parte */
+    left: 1031px;                  /* Alinea la línea al borde izquierdo */
+    top: 100vh;                   /* Alinea la línea al borde superior */
+}
+.linea-negra2 {
+    width: 2.4px;                /* Grosor de la línea */
+    height: 15vh;             /* Atraviesa toda la altura de la pantalla */
+    background-color: black;  /* Color de la línea */
+    border: none;             /* Elimina cualquier borde predeterminado */
+    margin: 0;                /* Elimina márgenes adicionales si los hay */
+    padding: 0;               /* Elimina relleno adicional si lo hay */
+    position: absolute;       /* Permite posicionar la línea en cualquier parte */
+    left: 100%;                  /* Alinea la línea al borde izquierdo */
+}
+.linea-negra3 {
+    width: 2.4px;                /* Grosor de la línea */
+    height: 15vh;             /* Atraviesa toda la altura de la pantalla */
+    background-color: black;  /* Color de la línea */
+    border: none;             /* Elimina cualquier borde predeterminado */
+    margin: 0;                /* Elimina márgenes adicionales si los hay */
+    padding: 0;               /* Elimina relleno adicional si lo hay */
+    position: absolute;       /* Permite posicionar la línea en cualquier parte */
+    left: 0px;                  /* Alinea la línea al borde izquierdo */
+}
+
+.linea-negra-horizontal2 {
+    
+    width: 100vh;        /* Atraviesa toda la pantalla horizontalmente */
+    height: 2.4px;        /* Grosor de la línea */
+    background-color: black;  /* Color de la línea */
+    border: none;       /* Elimina cualquier borde predeterminado */
+    position: absolute;
+    margin-top: 50px;
+    
+    margin-left: -450px;          
+    padding: 0;         /* Elimina relleno adicional si lo hay */                  /* Alinea la línea al borde superior */
+}
+.ntt{
+    height: 25px;
+    width: auto;
+    position: absolute;
+    margin-left: 630px;
+}
